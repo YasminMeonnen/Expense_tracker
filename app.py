@@ -24,6 +24,8 @@ if 'expenses' not in st.session_state:
 with st.form("expense_form"):
     amount = st.number_input("Amount", min_value=0.0)  # Removed format="%.2f"
     category = st.text_input("Category")
+    date = st.date_input("Date") 
+
     submitted = st.form_submit_button("Add Expense")
     if submitted:
         if category.strip():
@@ -51,4 +53,4 @@ if categories:
     filtered = filter_expenses_by_category(st.session_state.expenses, selected)
     st.write(f"Expenses for {selected}:")
     print_expenses(filtered)
-    st.date_input("Add Date") 
+   
