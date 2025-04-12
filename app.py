@@ -51,3 +51,4 @@ if categories:
     filtered = filter_expenses_by_category(st.session_state.expenses, selected)
     st.write(f"Expenses for {selected}:")
     print_expenses(filtered)
+    st.date_input() 
