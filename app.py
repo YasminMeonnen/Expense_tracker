@@ -26,7 +26,10 @@ with st.form("expense_form"):
     category = st.text_input("Category")
     date = st.date_input("Date") 
     budget = st.number_input("Set your Budget")
-    budget - expenses == (st.success() , st.error()) 
+    budget - expenses == (st.success() , st.error())
+    st.form_submit_button() 
+
+
      
     submitted = st.form_submit_button("Add Expense")
     if submitted:
