@@ -26,8 +26,12 @@ with st.form("expense_form"):
     category = st.text_input("Category")
     date = st.date_input("Date") 
     budget = st.number_input("Set your Budget")
-    budget - expenses == (st.success() , st.error())
-    st.form_submit_button() 
+    remaining = budget - total
+if remaining >= 0:
+    st.success(f"You're within budget. You have ${remaining:.2f} remaining.")
+else:
+    st.error(f"You have exceeded your budget by ${abs(remaining):.2f}!")
+    
 
 
      
