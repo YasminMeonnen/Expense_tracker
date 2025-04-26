@@ -46,10 +46,7 @@ else:
 # Show total
 st.subheader("Total Spent")
 st.write(f"${total_expenses(st.session_state.expenses)}")
-
-if:
 st.success("You're within budget.")
-else:
 st.error("You have exceeded your budget")
 
 # Filter by category
