@@ -48,7 +48,7 @@ st.subheader("Total Spent")
 st.write(f"${total_expenses(st.session_state.expenses)}")
 
 # Show budget 
-st.subheader("Budget Overview)
+st.subheader("Budget Overview")
 if budget > 0:
     remaining = budget - amount
     if remaining >= 0:
