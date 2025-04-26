@@ -28,7 +28,7 @@ with st.form("expense_form"):
     budget = st.number_input("Set your Budget")
 
      
-     submitted = st.form_submit_button("Add Expense")
+    submitted = st.form_submit_button("Add Expense")
     if submitted:
         if category.strip():
             add_expense(st.session_state.expenses, amount, category)
