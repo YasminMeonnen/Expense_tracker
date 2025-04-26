@@ -46,7 +46,7 @@ else:
 # Show total
 st.subheader("Total Spent")
 st.write(f"${total_expenses(st.session_state.expenses)}")
-remaining = budget - total
+remaining = budget - "Total Spent"
 if remaining >= 0:
     st.success(f"You're within budget. You have ${remaining:.2f} remaining.")
 else:
