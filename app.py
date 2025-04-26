@@ -26,12 +26,8 @@ with st.form("expense_form"):
     category = st.text_input("Category")
     date = st.date_input("Date") 
     budget = st.number_input("Set your Budget")
-    Calculate remaining = budget - total expenses
-    Under budget = st.success() 
-    Over budget = st.error()  
-
-
-
+    budget - total expenses = (st.success() , st.error()) 
+     
     submitted = st.form_submit_button("Add Expense")
     if submitted:
         if category.strip():
